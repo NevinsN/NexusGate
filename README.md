@@ -32,7 +32,7 @@ sequenceDiagram
 
 When a player trigger level advancement conditions, UE5 sends a payload to NexusGate, which saves the state in Redis. As the player transitions, NexusGate recalls and applies that state, validating health in the process.    
 
-##Design Objectives & Roadmap
+## Design Objectives & Roadmap
 **1. Automated Provisioning:** Reduce the manual overhead of spinning up dedicated server instances based on player demand.  
 **2. Health Monitoring:** Implement proactive health checks to ensure "self-healing" capabilities within the cluster.  
 **3. Observability:** (Upcoming) Integration of Prometheus/Grafana to track server latency and resource utilization (CPU/Memory).  
