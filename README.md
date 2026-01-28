@@ -24,8 +24,7 @@ NexusGate is developed in tandem with Powering Up, a solo two-level UE5 prototyp
 As an aspiring Cloud Services Engineer, I believe that reliability and clarity are the backbones of live-service gaming. NexusGate is my laboratory for applying the "systems-thinking" I developed over a decade in logistics to the complex world of game server infrastructure.
 
 ## Tech Stack  
-
-
+  
 | Component | Technology |
 | -————————-| -————————- |
 | Language | Go(backend), C++(UE5) |
