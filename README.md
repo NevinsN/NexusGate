@@ -26,8 +26,8 @@ As an aspiring Cloud Services Engineer, I believe that reliability and clarity a
 ## Tech Stack  
   
 | Component | Technology |  
-| -————————-| -————————- |  
-| Language | Go(backend), C++(UE5) |  
-| Orchestration | Kubernetes + Agones |  | Infrustructure | Terraform, Docker |  
-| State/Data | Redis |  
-
+| :--- | :---|  
+| **Language** | Go (Backend), C++ (UE5) |  
+| **Orchestration** | Kubernetes + Agones |  
+| **Infrastructure** | Terraform, Docker |  
+| **State/Data** | Redis |
