@@ -30,7 +30,7 @@ sequenceDiagram
     R->>UE5: Ingest State to New Instance
 ```
 
-When a player trigger level advancement conditions, UE5 sends a payload to NexusGate, which saves the state in Redis. As the player transitions, NexusGate recalls and applies that state, validating health in the process. 
+When a player trigger level advancement conditions, UE5 sends a payload to NexusGate, which saves the state in Redis. As the player transitions, NexusGate recalls and applies that state, validating health in the process.    
 
 ##Design Objectives & Roadmap
 **1. Automated Provisioning:** Reduce the manual overhead of spinning up dedicated server instances based on player demand.  
