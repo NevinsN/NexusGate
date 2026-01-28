@@ -15,6 +15,21 @@ NexusGate is developed in tandem with Powering Up, a solo two-level UE5 prototyp
 • **State Persistence:** Integrating Redis as a centralized data layer to handle real-time player progression and logic-gate flags across distributed instances.  
 • **CI/CD:** Automated builds via GitHub Actions to package Linux-based UE5 binaries into optimized Docker containers.  
 
+## Sequence Diagram
+```mermaid
+sequenceDiagram
+    participant UE5 as UE5 Dedicated Server
+    participant NG as NexusGate (Go)
+    participant R as Redis Cache
+
+    UE5->>R: Export State (Flags/Inventory)
+    UE5->>NG: Signal Handoff
+    NG->>NG: Validate Destination Instance
+    NG->>UE5: Confirm Ready
+    Note over UE5,NG: Player Transitions
+    R->>UE5: Ingest State to New Instance
+```
+
 ##Design Objectives & Roadmap
 **1. Automated Provisioning:** Reduce the manual overhead of spinning up dedicated server instances based on player demand.  
 **2. Health Monitoring:** Implement proactive health checks to ensure "self-healing" capabilities within the cluster.  
